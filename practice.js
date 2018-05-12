@@ -129,16 +129,16 @@ var methodCollection = {};
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-methodCollection.alertHello = alert('hello');
-methodCollection.logHello = console.log('hello');
+ methodCollection.alertHello = function () {alert('hello')}
+ methodCollection.logHello =  function () {console.log('hello')};
 
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-methodCollection.alertHello;
-methodCollection.logHello;
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
